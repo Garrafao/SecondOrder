@@ -2,7 +2,7 @@
 
 Data and code for the experiments in
 
-- Dominik Schlechtweg, Cennet Oguz and Sabine Schulte im Walde. 2019. Second-order Co-occurrence Sensitivity of Skip-Gram with Negative Sampling. In *Proceedings of the 2019 {ACL} Workshop {B}lackbox{NLP}: Analyzing and Interpreting Neural Networks for {NLP}*, Florence, Italy. Association for Computational Linguistics.
+- Dominik Schlechtweg, Cennet Oguz and Sabine Schulte im Walde. 2019. Second-order Co-occurrence Sensitivity of Skip-Gram with Negative Sampling. In *Proceedings of the 2019 ACL Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP*, Florence, Italy. Association for Computational Linguistics.
 
 If you use this software for academic research, [please cite the paper above](#bibtex) and make sure you give appropriate credit to the below-mentioned software this repository depends on.
 
