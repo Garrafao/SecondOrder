@@ -11,15 +11,19 @@ The code heavily relies on [DISSECT](http://clic.cimec.unitn.it/composes/toolkit
 Usage Note
 --------
 
-The scripts should be run directly from the main directory. If you wish to do otherwise, you may have to change the path you add to the path attribute in `sys.path.append('./modules/')` in the scripts. All scripts can be run directly from the command line. To reproduce an artificial corpus similar to the one used in the paper run
+The scripts should be run directly from the main directory. If you wish to do otherwise, you may have to change the path you add to the path attribute in `sys.path.append('./modules/')` in the scripts. All scripts can be run directly from the command line. To produce a small artificial corpus (2 target words per group, 5 context words per target and sampling 10 times) run
 
-	python pair_extraction/simulate_pairs.py 10 1000 1000 ./simul-pairs
+	python pair_extraction/simulate_pairs.py 2 5 10 ./simul-pairs
 
-In order to extract equally many (1.0) second-order co-occurrence pairs from a small first-order pair sample ignoring words above a (co-occurrence) frequency of 5 run
+Note that the script is not optimized for memory usage and the produced corpus grows large very fast with increasing parameter values.
+
+In order to extract second-order co-occurrence pairs from a small first-order pair sample run
 
 	python pair_extraction/second_order_pairs.py pairs/test/pairs 1.0 5 pairs/test/second_order_pairs
 
-Regular word-context corpus pairs can be extracted and models can be trained with [hyperwords](https://bitbucket.org/omerlevy/hyperwords). We recommend you to run the scripts with the Python Anaconda distribution (Python 2.7.15). You will have to install some additional packages such as docopt. Those that aren't available from the Anaconda installer can be installed via EasyInstall. Please do not hesitate to write us an email if you need any help or additional scripts or data.
+With these parameter settings the script will extract as many second-order pairs per target as first-order pairs were found (1.0) and ignore words above a frequency threshold of 5. The second-order pairs will be extracted to pairs/test/second\_order\_pairs.
+
+Regular first-order corpus pairs can be extracted and models can be trained with [hyperwords](https://bitbucket.org/omerlevy/hyperwords). We recommend you to run the scripts with the Python Anaconda distribution (Python 2.7.15). You will have to install some additional packages such as docopt. Those that aren't available from the Anaconda installer can be installed via EasyInstall, or by running pip install -r requirements.txt. Please do not hesitate to write us an email if you need any help or additional scripts or data.
 
 BibTex
 --------

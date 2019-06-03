@@ -104,7 +104,7 @@ def main():
         for (t1,t2) in combinations(targetsNone, 2):
                 f_out.write('\t'.join((t1,t2))+'\n')
                 
-    # Export contexts
+    # Export context samples
     logging.info("Exporting tcontexts")    
     with codecs.open(outPath+'-tcontexts-1st', 'w') as f_out:
         tcontexts = [c for t in tcontexts1st for c in t]        

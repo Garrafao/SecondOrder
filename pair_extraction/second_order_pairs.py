@@ -26,7 +26,7 @@ def main():
     Arguments:
        
         <pairFile> = path to training pairs with each line in the format 'word1 word2'
-        <samplesize> = number new pairs, expressed as percentage of old pairs (1.0 extracts equally many new pairs as old pairs)
+        <samplesize> = number of new pairs per target, expressed as percentage of old pairs (1.0 extracts equally many new pairs as old pairs)
         <freqThr> = co-occurrence frequency threshold over which no pairs are extracted
         <outPath> = output path for extracted pairs
 
