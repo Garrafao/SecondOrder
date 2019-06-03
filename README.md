@@ -21,9 +21,9 @@ In order to extract second-order co-occurrence pairs from a small first-order pa
 
 	python pair_extraction/second_order_pairs.py pairs/test/pairs 1.0 5 pairs/test/second_order_pairs
 
-With these parameter settings the script will extract as many second-order pairs per target as first-order pairs were found (1.0) and ignore words above a frequency threshold of 5. The second-order pairs will be extracted to pairs/test/second\_order\_pairs.
+With these parameter settings the script will extract as many second-order pairs per target as first-order pairs were found (1.0) and ignore words above a frequency threshold of 5. The second-order pairs will be extracted to pairs/test/second\_order\_pairs`.
 
-Regular first-order corpus pairs can be extracted and models can be trained with [hyperwords](https://bitbucket.org/omerlevy/hyperwords). We recommend you to run the scripts with the Python Anaconda distribution (Python 2.7.15). You will have to install some additional packages such as docopt. Those that aren't available from the Anaconda installer can be installed via EasyInstall, or by running pip install -r requirements.txt. Please do not hesitate to write us an email if you need any help or additional scripts or data.
+Regular first-order corpus pairs can be extracted and models can be trained with [hyperwords](https://bitbucket.org/omerlevy/hyperwords). We recommend you to run the scripts with the Python Anaconda distribution (Python 2.7.15). You will have to install some additional packages such as docopt. Those that aren't available from the Anaconda installer can be installed via EasyInstall, or by running `pip install -r requirements.txt`. Please do not hesitate to write us an email if you need any help or additional scripts or data.
 
 BibTex
 --------
